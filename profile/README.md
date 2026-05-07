@@ -1,35 +1,55 @@
-# DynamiX Labs
+# DynamiX-Labs
 
-A student-run R&D organization exploring embedded systems, avionics, simulation, and control engineering.
+**Advanced R&D Organization | Embedded Systems | Avionics | Control Engineering**
 
-We learn by building — from firmware to physical hardware to software tools. Everything here is experimental, educational, and open.
+DynamiX Labs is a student-led research and development organization dedicated to advancing open-source aerospace technology. Our work spans from low-level firmware and structural origami-based mechanical design to high-fidelity simulation and RF communication protocols. 
 
----
-
-## What We Work On
-
-- **Embedded Systems** — microcontrollers, sensors, motor drivers, firmware
-- **Structural Design** — origami-based mechanical assemblies for compact hardware
-- **ADCS** — attitude control using reaction wheels and filters
-- **Simulation** — hardware-in-the-loop platforms for testing
-- **RF & Communication** — SDR, LoRa, and telemetry bridging
+We emphasize rigorous engineering practices, hardware-in-the-loop (HITL) simulation, and production-grade avionics development.
 
 ---
 
-## Current Project
+## Active Projects
 
-### CubeDynamics — CubeSat Reaction Wheel Self-Balance
+### [SDR Hardware Benchmark](https://github.com/DynamiX-Labs/SDR-Hardware-Benchmark)
+A comprehensive benchmarking suite designed to evaluate the performance, latency, and throughput of Software Defined Radio (SDR) hardware across varied aerospace communication scenarios. This framework validates RF hardware configurations for high-reliability telemetry pipelines.
 
-A 1U CubeSat attitude control system built from scratch. We handle the **origami structural design** — the folded mechanical frame that houses the reaction wheels and electronics.
+```mermaid
+graph LR
+    A[Embedded RF Source] -->|Signal Transmission| B(SDR Hardware)
+    B -->|I/Q Data Stream| C{DSP Benchmarking Engine}
+    C -->|Latency/Throughput| D[Performance Analytics]
+```
 
-The simulation and control system is built in collaboration with [ARYA-mgc](https://github.com/ARYA-mgc).
+### [CubeSat Reaction Wheel Self-Balance](https://github.com/DynamiX-Labs/CubeSat-Reaction-wheel-self-balance)
+An end-to-end 1U CubeSat Attitude Determination and Control System (ADCS). This project focuses on utilizing an origami-inspired structural mechanical frame to house a custom-built reaction wheel assembly and electronics. The system is designed to provide precise attitude stabilization and control through advanced filtering and hardware integration.
 
-🔗 [CubeSat-Reaction-wheel-self-balance](https://github.com/ARYA-mgc/CubeSat-Reaction-wheel-self-balance)
+```mermaid
+graph LR
+    A[IMU / Sensors] -->|Raw Data| B(Error-State Kalman Filter)
+    B -->|State Estimate| C{Control Law}
+    C -->|Torque Command| D[Motor Drivers]
+    D -->|Actuation| E((Reaction Wheels))
+    E -->|Spacecraft Dynamics| A
+```
+
+### YAPEX Protocol (In Development)
+We are engineering **YAPEX**, a next-generation communication protocol tailored specifically for the rocket IST (Inter-System Telemetry) ecosystem. Conceptually similar to MAVLink, YAPEX is designed to provide deterministic, low-latency, and high-reliability data exchange between critical flight hardware, subsystems, and ground station networks, establishing a robust foundation for scalable aerospace infrastructure.
+
+
 
 ---
 
-## Who We Are
+## Core Focus Areas
 
-Students from India interested in aerospace, embedded systems, and open-source hardware. We build projects to learn, share our work publicly, and collaborate with anyone interested.
+- **Embedded Systems Engineering**: Microcontroller firmware, sensor fusion, and high-performance motor drivers.
+- **Control Theory & ADCS**: Non-linear control strategies, reaction wheel actuation, and state estimation filters.
+- **Aerospace Simulation**: Hardware-in-the-loop (HITL) architectures for safe and rigorous software validation.
+- **RF & Telemetry**: Distributed ground station networks, SDR integration, and specialized communication protocols.
 
-📬 [cubedynamics.10@gmail.com](mailto:cubedynamics.10@gmail.com)
+---
+
+## Connect With Us
+
+We are actively seeking collaboration with individuals who are passionate about our work.
+
+**Contact**: [cubedynamics.10@gmail.com](mailto:cubedynamics.10@gmail.com)
