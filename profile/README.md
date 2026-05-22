@@ -19,7 +19,16 @@ graph LR
     B -->|I/Q Data Stream| C{DSP Benchmarking Engine}
     C -->|Latency/Throughput| D[Performance Analytics]
 ```
+### [Mission Control](https://github.com/DynamiX-Labs/mission-control)
+A robust ground station and telemetry visualization platform engineered for real-time aerospace monitoring. It handles real-time data parsing, high-frequency telemetry visualization, and command uplinking, providing operators with seamless, low-latency control and situational awareness over flight hardware during testing and live operations.
+```mermaid
+graph LR
+    A[Telemetry Stream] -->|RF / YAPEX Data| B(Backend Parser & Server)
+    B -->|Parsed State Data| C{Mission Control Dashboard}
+    C -->|Live Visualization| D[Operator UI]
+    C -->|Uplink Commands| E[Ground Transceiver]
 
+```
 ### [CubeSat Reaction Wheel Self-Balance](https://github.com/DynamiX-Labs/CubeSat-Reaction-wheel-self-balance)
 An end-to-end 1U CubeSat Attitude Determination and Control System (ADCS). This project focuses on utilizing an origami-inspired structural mechanical frame to house a custom-built reaction wheel assembly and electronics. The system is designed to provide precise attitude stabilization and control through advanced filtering and hardware integration.
 
