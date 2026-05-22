@@ -19,7 +19,7 @@ graph LR
     B -->|I/Q Data Stream| C{DSP Benchmarking Engine}
     C -->|Latency/Throughput| D[Performance Analytics]
 ```
-### [Mission Control](https://github.com/DynamiX-Labs/mission-control)
+### [Ground-Station-Suite](https://github.com/DynamiX-Labs/Ground-Station-Suite)
 A robust ground station and telemetry visualization platform engineered for real-time aerospace monitoring. It handles real-time data parsing, high-frequency telemetry visualization, and command uplinking, providing operators with seamless, low-latency control and situational awareness over flight hardware during testing and live operations.
 ```mermaid
 graph LR
